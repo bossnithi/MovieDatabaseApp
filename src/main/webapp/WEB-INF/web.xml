@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd" id="WebApp_ID" version="6.0">
+ 
+  <servlet>
+  <servlet-name>firstServlet</servlet-name>
+  <servlet-class>in.ShowRecord</servlet-class></servlet>
+  
+  <servlet-mapping>
+  <servlet-name>firstServlet</servlet-name>
+  <url-pattern>/selected</url-pattern></servlet-mapping>
+  <servlet>
+  <servlet-name>secondServlet</servlet-name>
+  <servlet-class>in.AddMovie</servlet-class></servlet>
+  
+  <servlet-mapping>
+  <servlet-name>secondServlet</servlet-name>
+  <url-pattern>/input</url-pattern></servlet-mapping>
+  
+   <servlet>
+  <servlet-name>thirdServlet</servlet-name>
+  <servlet-class>in.AllMovie</servlet-class></servlet>
+  
+  <servlet-mapping>
+  <servlet-name>thirdServlet</servlet-name>
+  <url-pattern>/allMovieServlet</url-pattern></servlet-mapping>
+</web-app>

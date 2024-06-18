@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Show Record</title>
+ <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 12px;
+        }
+    </style>
+</head>
+<body>
+<h1>Show Record</h1>
+<!-- <form action="allMovie"><input type="submit" id="allMovie" value="Show All Movies"></form> -->
+<a href="allMovieServlet">Show All Movie</a>
+<br> <br>
+<form action="selected">
+<table >
+<tr><td>Select Language</td>
+<td><select name="option" ><option>All Language</option><option>Indian Language</option><option>Foreign Language</option></select></td>
+</tr>
+<tr><td>Enter Movie Year</td><td><input type="text" name="yearOption"></td></tr>
+</table>
+<br>
+<input type="submit">
+</form>
+</body>
+</html>
